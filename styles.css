@@ -1,0 +1,73 @@
+body {
+    /* Location of the image */
+    background-image: url(images/sunset.jpg);
+    /* Background image is centered vertically 
+    and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn’t tile */
+    background-repeat: no-repeat;
+     /* Background image is fixed in the viewport 
+     so that it doesn’t move when the content’s 
+     height is greater than the image’s height */
+     background-attachment: fixed;
+     /* This is what makes the background image
+      rescale based on the container’s size */
+      background-size: cover;
+      /* Set a background color that will be 
+      displayed while the background image is loading */
+      background-color: #464646;
+      font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (max-width: 767px) { 
+    body { /* The file size of this background image is 93% 
+        smaller to improve page load speed on mobile internet connections */ background-image: url(images/beach-responsive.jpg); 
+    } 
+}
+
+.container{
+    font-size: 2.5rem;
+    color: white;
+    display: table;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.words {
+    margin: 50px auto;
+    font-size: 25px;
+    line-height: 23px;
+}
+
+.image {
+    font-size: 1.2rem;
+}
+
+.quotes {
+  text-align: center;
+}
+
+blockquote {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-family: 'Dancing Script', cursive;
+    /* display: flex; */
+    max-width: 480px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: rgba(165, 165, 165, 0.13);
+    color: white;
+    font-size: 27px;
+    line-height: 28px;
+}
+
+a {
+    color: white;
+}
