@@ -20,9 +20,15 @@ body {
 }
 
 @media only screen and (max-width: 767px) { 
-    body { /* The file size of this background image is 93% 
-        smaller to improve page load speed on mobile internet connections */ background-image: url(images/beach-responsive.jpg); 
+    body {
+        background-image: url(images/sunset-responsive.jpg); 
     } 
+}
+
+@media only screen and (max-width: 390px) {
+    body {
+        background-image: url(images/sunset-iphone.jpg);
+    }
 }
 
 .container{
